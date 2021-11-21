@@ -61,4 +61,4 @@ class TokenData(BaseModel):
 
 class Vote(BaseModel):
     post_id: int
-    dir: conint(ge=0, le=1)  # valid the number is 1 or 0 (the number is less or equal to 1)
+    dir: conint(le=1)  # valid the number is 1 or 0 (the number is less or equal to 1)
